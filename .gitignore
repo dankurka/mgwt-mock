@@ -2,6 +2,8 @@
 .classpath
 .settings
 .project
+target
+
 
 # Package Files #
 *.jar
