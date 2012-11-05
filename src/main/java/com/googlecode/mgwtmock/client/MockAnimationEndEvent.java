@@ -25,8 +25,6 @@ public class MockAnimationEndEvent extends AnimationEndEvent {
 
 	private static com.google.gwt.event.dom.client.DomEvent.Type<AnimationEndHandler> MOCKTYPE = new Type<AnimationEndHandler>("animationnEnd", new MockAnimationEndEvent());
 
-
-
 	public static Type<AnimationEndHandler> getType() {
 		return MOCKTYPE;
 	}
