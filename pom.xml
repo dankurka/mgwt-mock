@@ -48,6 +48,13 @@
 			<url>http://www.christian-kuetbach.de</url>
 		</contributor>
 	</contributors>
+	
+	<repositories>
+		   <repository>
+		      <id>sonatype snapshots</id>
+		      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		   </repository>
+	</repositories>
 
 
 	<scm>
