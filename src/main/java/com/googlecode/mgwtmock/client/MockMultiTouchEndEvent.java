@@ -16,8 +16,7 @@
 package com.googlecode.mgwtmock.client;
 
 import com.googlecode.mgwt.collection.shared.LightArray;
-import com.googlecode.mgwt.dom.client.event.touch.Touch;
-import com.googlecode.mgwt.dom.client.event.touch.TouchEndEvent;
+import com.googlecode.mgwt.dom.client.event.touch.*;
 
 public class MockMultiTouchEndEvent extends TouchEndEvent {
 	private final LightArray<Touch> touches;
@@ -30,5 +29,21 @@ public class MockMultiTouchEndEvent extends TouchEndEvent {
 	@Override
 	public LightArray<Touch> getTouches() {
 		return touches;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.google.gwt.event.dom.client.DomEvent#stopPropagation()
+	 */
+	@Override
+	public void stopPropagation() {
+		//Todo: should we know, if this method was called?
+	}
+
+	/* (non-Javadoc)
+	 * @see com.google.gwt.event.dom.client.DomEvent#preventDefault()
+	 */
+	@Override
+	public void preventDefault() {
+		//Todo: should we know, if this method was called?
 	}
 }
